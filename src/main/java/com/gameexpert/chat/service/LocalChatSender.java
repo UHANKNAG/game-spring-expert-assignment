@@ -11,5 +11,6 @@ public class LocalChatSender {
 
     public void send(Long worldId, Object message) {
         // TODO Lv 14: 같은 월드의 참여자에게 메시지를 전송합니다.
+        broadcaster.broadcast(worldId, message);
     }
 }
